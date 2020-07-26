@@ -1,0 +1,152 @@
+<%- include ('./partials/header') %>
+
+<div style=" background: #420000;">
+        <div style="padding-top: 135px;">
+        <div style="width: 80%; height: 100%; margin-left: 10%;">
+            <!-- <img src="/stylesheet/img/contact.png" style="width: 100%; height: 100%;"> -->
+            <h2 style="color: #fff; font-weight: 400; text-align: center;">
+                <i>Keep in touch with E.d Studios...</i>
+            </h2>
+        </div>
+    </div><br>
+    <div style=" color: #fff; padding: 0; text-align: center; ">
+        <form action="https://script.google.com/macros/s/AKfycbx1C-0Sa6VrVII_d8gXV0z7cXJa6MsZonzICqZo/exec" method="POST" class="gform"  >
+           <label>
+            <b>Name:</b> <br>
+          </label>
+          <input type="text" placeholder="FirstName" name="FirstName" required><br><br>
+          <input type="text" placeholder="LastName" name="LastName" required>
+          <br><br>
+          <label>
+              <b>Cell Number:</b><br>
+          </label>
+          <input type="tel" name="Number" placeholder="Phone No" required>
+          <br><br>
+          <label>
+              <b>E-mail:</b><br>
+          </label>
+          <input type="email" name="email" placeholder="@email.com" required>
+          <br><br>
+          <label>
+            <b>Description:</b><br>
+          </label>
+          <textarea name="Description" cols="30" rows="10" style="width: 70%;" placeholder=" Describe little on how we can be of assistance..."></textarea><br><br>
+          <label>
+              <b>Date of event:</b><br>
+          </label>
+          <input type="datetime-local" name="eventDate">
+          <br><br>
+        <label>
+            <b>Type of Service:</b><br>
+        </label>
+            <select name="type">
+              <option value="select" disabled>Select Category</option>
+              <option value="StudioShoot">Studio Shoot</option>
+              <option value="OutdoorShoot">Outdoor Shoot</option>
+              <option value="EventCoverage">Event Coverage</option>
+              <option value="PhotographyTraining">Photography Training</option>
+            </select>
+        <br><br>
+        <button type="submit" style="width: 35%; padding: 10px;"><i class="fa fa-send"></i> Send</button><br>
+
+          <div style="display:none" class="thankyou_message">
+            <!-- You can customize the thankyou message by editing the code below  -->
+            <h3><em>Thanks</em> for keeping in touch with <i>Everyday Studios. </i>  Your response has been recorded Successfully.
+            </h3>
+           </div>
+        </form>
+    </div>
+    
+</div><br><br>
+<style>
+    
+</style>
+
+<div class="footer">
+    <section class="follow">
+        <h4 style="text-transform: uppercase; text-align: center;"> follow us on social media</h4> <br>
+        <p style="text-align: center;">
+          <a href="https://instagram.com/e.d.studios?igshid=1u4xr2ux8tfry" style="margin-right: 30px; color: #e03172;"><i class="fa fa-instagram"></i></a>
+          <a href="https://twitter.com/edstudiosng"><i class="fa fa-twitter" style="color: #21adf3;"></i></a>
+        </p>
+        <br>
+        <div class="carousel" data-flickity='{ "wrapAround": true, "autoplay": true}'>
+          <div class="carousel-cell"><img src="https://i.ibb.co/pXcjpb0/DSC-7731.jpg" id="slider"></div>
+          <div class="carousel-cell"><img src="https://i.ibb.co/R9kXfrf/270A9881.jpg" ></div>
+          <div class="carousel-cell"><img src="https://i.ibb.co/pPZtd5B/DSC-3937.jpg" ></div>
+          <div class="carousel-cell"><img src="https://i.ibb.co/TThvQ3F/781A8817.jpg" ></div>
+          <div class="carousel-cell"><img src="https://i.ibb.co/3sLRDr0/EDS-4350.jpg" ></div>
+          <div class="carousel-cell"><img src="https://i.ibb.co/swthHr9/EDS-8735.jpg" ></div>
+          <div class="carousel-cell"><img src="https://i.ibb.co/BgQHK5D/IMG-2019.jpg" ></div> 
+      </div>
+    </section>
+    <br>
+    <br>
+    <section class="footer" style="background: black; color: #fff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <a href="/"><img src="/stylesheet/img/rsz_1img_6157.PNG" class="log2"></a>
+            <div style="margin-left: 7%; padding-top: 70px;">
+                <div style="padding-top: inherit;">
+                    <h4>&copy; 2019 Everyday Studios</h4><br>
+                    <h4>Follow our Instagram Pages</h4><br>
+                    <h4><a href="https://instagram.com/ed_weddings?igshid=s0chhnr8w4b1"><i class="fa fa-instagram" style="color: #e05b8c;"></i> @ed_weddings</a></h4><br>
+                    <h4><a href="https://instagram.com/e.d.studios?igshid=1u4xr2ux8tfry"><i class="fa fa-instagram" style="color: #e05b8c;"></i> @e.d.studios</a></h4><br>  
+                </div>
+                <style>
+                    h4 a{
+                      color: #fff;
+                    }
+                    nav a:hover{
+                      color: #deb887;
+                    }
+                    input{
+                      padding: 6px;
+                      text-align: left;
+                      width: 70%;
+                      height: 50px;
+                    }
+                  form {
+                    /* background: #629614; */
+                    border-radius: 30px;
+                    opacity: 0.96;
+                    display: contents;
+                  }
+                  select {
+                    padding: 10px;
+                  }
+                  .disp{
+                    display: none;
+                    transition: 20s ease-in-out;
+                  }
+                </style>
+            </div>
+    </section>
+</div>
+    <script type="text/javascript" >
+    const menuBtn= document.querySelector(".menu-btn");
+    const disp= document.querySelector(".gform")
+    let menuOpen= false;
+    menuBtn.addEventListener('click', () => {
+        if(! menuOpen){
+            menuBtn.classList.add('open')
+            menuOpen= true;
+        }else {
+            menuBtn.classList.remove('open')
+            menuOpen = false;
+        }
+    });
+    // get the iso time string formatted for usage in an input['type="datetime-local"']
+    var tzoffset = (new Date()).getTimezoneOffset() * 60000; //offset in milliseconds
+    var localISOTime = (new Date(Date.now() - tzoffset)).toISOString().slice(0,-1);
+    var localISOTimeWithoutSeconds = localISOTime.slice(0,16);
+
+    // select the "datetime-local" input to set the default value on
+    var dtlInput = document.querySelector('input[type="datetime-local"]');
+
+    // set it and forget it ;)
+    dtlInput.value = localISOTime.slice(0,16);
+    </script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script script data-cfasync="false" type="text/javascript" src="/stylesheet/js/form.js"></script>
+</body>
+</html>

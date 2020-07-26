@@ -1,0 +1,47 @@
+<%- include ('../partials/header') %> 
+    <div class="servicebg">       
+        <ol class="svc">
+            <li rel="one"><a href="/services/eventCoverage" data-text="Event Coverage">Event Coverage</a></li>
+            <li rel="two"><a href="/services/outdoorShoot" data-text="Outdoor Shot">Outdoor Shoot</a></li>
+            <li rel="three"><a href="/services/studioShoot" data-text="Studio Shoot">Studio Shoot</a></li>
+            <li rel="four"><a href="/services/photographyTraining" data-text="Photography Training">Photography Training</a></li>
+        </ol>
+            
+    </div><br><br>
+    <style>
+        .servicebg{
+        /* background: #ffffff; */
+        background: url('https://i.ibb.co/551nxtC/781A8489.jpg') no-repeat;
+        background-size: cover; background-position: center center;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        transition: 0.5s;
+        }
+        .servicebg li {
+            padding-top: 20vh;
+            width: 100%;
+            height: 15vh;
+            color: #fff;
+            background-size: cover;
+            font-size: 30px;
+        }
+        /* .servicebg li:hover{
+            background: url(/stylesheet/img/781A501.jpg) no-repeat;
+            background-size: cover;
+            background-position: center center;
+        } */
+        ol a{
+            color: #83c326;
+        }
+        ol li a:hover{
+            font-size: 32px;
+            color: rgb(221, 57, 57);
+        }
+        /* div + li:hover{
+            background: url(/stylesheet/img/2F3A0500.jpg);
+        } */
+        
+    </style>
+   
+<%- include ('../partials/footer') %> 

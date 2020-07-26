@@ -1,0 +1,61 @@
+img{
+    width: 170px;
+    height: 150px;
+}
+.carousel-cell {
+    width: 20%;
+    height: 150px;
+    margin-right: 10px;
+    margin-left: 20px;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+}
+.flickity-prev-next-button {
+    width: 20px;
+    height: 20px;
+}
+  /* cell number */
+  /* .carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }  */
+  .carousel{
+      padding-bottom: 35px;
+  }
+  .log2{
+    width: 230px;
+    height: 160px;
+    position: absolute;
+    margin-left: 5%;
+}
+
+@media (max-width: 858px){
+    img{
+        width: 90px;
+        height: 94px;
+    } .carousel-cell {
+    width: 20%;
+    height: 90px;
+    margin-right: 10px;
+    margin-left: 20px;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+    }
+    .log2{
+    width: 230px;
+    height: 160px;
+    position: absolute;
+    margin-left: 0;
+    }
+}.para{
+    font-size: 18px;
+}
+@media (max-width: 376px){
+    .para{
+        font-size: 14px;
+    }
+}
